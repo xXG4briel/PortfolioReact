@@ -1,0 +1,50 @@
+main {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 85%;
+    max-width: 1640px;
+    .main-welcome {
+        aside {
+            div {
+                .font-small {
+                    color: var(--text-gray-light);
+                    font-size: 2.2rem;
+                }
+                p {
+                    // color: var(--text-purple-gray);
+                    // font-size: 5rem;
+                    font-size: 4vw;
+                    max-width: 45vw;
+                    span {
+                        color: var(--color-tertiary);
+                    }
+                }
+                .main-midias-icons {
+                    width: 18vw;
+                    display: flex;
+                    justify-content: space-between;
+                    img {
+                        width:32px;
+                    }
+                }
+            }
+        }
+    }
+    .main-img {
+        width: auto;
+        img {
+            width: 22vw;
+            border-radius: 50%;
+        }
+        // div {
+        // }
+    }
+
+}
+
+@media screen and ( max-width: 768px ) {
+    main {
+        width: 95%;
+    }
+}
