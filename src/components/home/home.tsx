@@ -1,5 +1,7 @@
 // import { React } from 'react';
 import './home.scss'
+// import Typewritter from 'typewriter-effect';
+import Typewriter from 'typewriter-effect';
 
 function Home(){
 
@@ -16,7 +18,22 @@ function Home(){
                     <aside>
                         <div>
                             <span className="font-small">Bem vindo ao meu mundo.</span>
-                            <p>Olá, me chamo <span>Gabriel</span>  sou um estudante e Desenvolvedor Front end</p>
+                            {/* <p>Olá, me chamo <span>Gabriel</span>  sou um estudante e Desenvolvedor Front end</p> */}
+                            <p><Typewriter
+                                onInit={(typewriter: any) => {
+                                    typewriter.typeString('Olá, me chamo <span class="my-name">Gabriel</span>  sou um estudante e Desenvolvedor Front end')
+                                    .callFunction(() => {
+                                        console.log('String typed out!');
+                                    })
+                                    // .pauseFor(2500)
+                                    // .deleteAll()
+                                    // .callFunction(() => {
+                                    //     console.log('All strings were deleted');
+                                    // })
+                                    .start();
+                                }}
+                            /></p>
+                                
                         </div>
                         <div className="main-midias-sociais">
                             <span className="font-small">Minhas midias sociais</span>
