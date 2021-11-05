@@ -1,0 +1,59 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    h1{
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 500;
+    }
+    .about-container {
+        // height: 100%;
+        height: 81vh;
+        border: 1px solid orangered;
+        display: flex;
+        justify-content: space-between;
+        // align-items: center;
+        .about-information {
+            // border: 1px solid red;
+            .about-img {
+                img {
+                    width: 28vw;
+                    border-radius: 50%;
+                }
+            }
+            .about-info {
+                ul {
+                    li {
+                        font-size: 2rem;
+                        color: var(--text-gray-light);
+                        span {
+                            color: black;
+                        }
+                    }
+                }
+            }
+        }
+        .about-knowledge {
+            border: 1px solid blue;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            .about-frase {
+                width: 90%;
+                margin: 0 auto;
+                color: var(--text-gray-light);
+                font-size: 2rem;
+                p:first-child {
+                    text-indent: 50px;
+                }
+            }
+            .about-experience {
+                border: 1px solid green;
+                height: 59%;
+            }
+        }
+    }
+
+}

@@ -5,13 +5,14 @@ import Home from './components/home/home'
 import About from './components/about/about';
 
 import './App.css';
+import './Style.css'
 
 // import logo from './logo.svg';
 function App() {
   return (
     <>
-      <Header></Header>
-      <Home></Home>
+      {/* <Header></Header> */}
+      {/* <Home></Home> */}
       <About></About>
     </>
   );
