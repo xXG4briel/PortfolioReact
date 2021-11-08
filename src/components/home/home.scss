@@ -6,10 +6,10 @@
     main {
         display: flex;
         justify-content: space-between;
-        margin: 0 auto;
-        width: 85%;
         height: 50%;
-        max-width: 1640px;
+        // margin: 0 auto;
+        // width: 85%;
+        // max-width: 1640px;
         .main-welcome {
             aside {
                 display: flex;
@@ -61,10 +61,10 @@
     }
 }
 
-@media screen and ( max-width: 768px ) {
-    .home-page-container {
-        main {
-            width: 95%;
-        }
-    }
-}
+// @media screen and ( max-width: 768px ) {
+//     .home-page-container {
+//         main {
+//             width: 95%;
+//         }
+//     }
+// }
