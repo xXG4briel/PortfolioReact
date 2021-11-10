@@ -35,20 +35,22 @@ function Project() {
     ]
 
     return (
-    <main>
-        <h1>Projetos</h1>
-        <div className="project-container">
-            { projects.map( (project: any) => 
-            <aside className="project-card">
-                <h3>{project?.name}</h3>
-                <img src={project?.image} alt="logo"/>
-                <div className="project-text-project">
-                    <p>{project?.text}</p>
-                </div>
-            </aside>
-            ) }
-        </div>
-    </main>
+    <div className="project-page-container">
+        <main>
+            <h1>Projetos</h1>
+            <div className="project-container">
+                { projects.map( (project: any) => 
+                <aside className="project-card">
+                    <h3>{project?.name}</h3>
+                    <img src={project?.image} alt="logo"/>
+                    <div className="project-text-project">
+                        <p>{project?.text}</p>
+                    </div>
+                </aside>
+                ) }
+            </div>
+        </main>
+    </div>
     );
 }
 

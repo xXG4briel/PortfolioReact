@@ -1,6 +1,6 @@
 // import { React } from 'react';
 import './home.scss'
-// import Typewritter from 'typewriter-effect';
+import Typewritter from 'typewriter-effect';
 // import Typewriter from 'typewriter-effect';
 // import Typical from 'react-typical';
 
@@ -38,7 +38,7 @@ function Home(){
                             <span className="font-small">Bem vindo ao meu mundo.</span>
                             {/* <p>Olá, me chamo <span>Gabriel</span>  sou um estudante e Desenvolvedor Front end</p> */}
                             <p id="app">
-                            {/* <Typewriter
+                            <Typewritter
                                 onInit={(typewriter: any) => {
                                     typewriter.typeString('Olá, me chamo <span class="my-name">Gabriel</span>  sou um estudante e Desenvolvedor Front end')
                                     .pauseFor(2500)
@@ -47,6 +47,9 @@ function Home(){
                                     .pauseFor(2500)
                                     .deleteChars(25)
                                     typewriter.typeString('UI Designer?')
+                                    .pauseFor(2500)
+                                    .deleteChars(12)
+                                    typewriter.typeString('Desenvolvedor Front end')
                                     .callFunction(() => {
                                         console.log('String typed out!');
                                     })
@@ -57,7 +60,7 @@ function Home(){
                                     // })
                                     .start();
                                 }}
-                            /> */}
+                            />
                             {/* <Typical
                             steps={['Hello', 1000, 'Hello world!', 500]}
                             loop={Infinity}
